@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub - Développez vos compétences</title>
+    <link rel="stylesheet" href="asset/styles/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="asset/img/logo-skillhub.png" alt="Logo SkillHub">
+        <span>SkillHub</span>
+    </div>
+    <nav id="menu" class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#formations">Formations</a>
+        <a href="#cta">Connexion</a>
+    </nav>
+    <button id="menu-btn" aria-label="Menu mobile">☰</button>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+        <img src="asset/img/logo-skillhub-large.png" alt="Logo SkillHub" class="hero-logo">
+        <h1>Développez vos compétences avec SkillHub</h1>
+        <p>Découvrez les formations proposées dans votre entreprise et développez vos talents grâce à notre plateforme interne.</p>
+        <a href="#formations" class="cta-btn">Découvrir les formations</a>
+    </section>
+
+    <!-- FONCTIONNALITÉS -->
+    <section class="features" id="features">
+        <h2>Fonctionnalités de SkillHub</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <img src="asset/img/logo-skillhub-large.png" alt="Catalogue de formations" class="feature-img">
+                <h3>Catalogue de formations</h3>
+                <p>Accédez à un large catalogue de formations proposées au sein de votre entreprise.</p>
+            </div>
+            <div class="feature-card">
+                <img src="asset/img/logo-skillhub-large.png" alt="Suivi de progression" class="feature-img">
+                <h3>Suivi de progression</h3>
+                <p>Suivez votre évolution et visualisez les compétences que vous développez au fil du temps.</p>
+            </div>
+            <div class="feature-card">
+                <img src="asset/img/logo-skillhub-large.png" alt="Recommandations personnalisées" class="feature-img">
+                <h3>Recommandations personnalisées</h3>
+                <p>Recevez des suggestions de formations adaptées à votre profil et à vos objectifs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATIONS -->
+    <section id="formations" class="formations">
+        <h2>Formations disponibles</h2>
+        <div id="formations-container"></div>
+    </section>
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+<section id="inscription" class="inscription">
+    <h2>Inscrivez-vous à SkillHub</h2>
+    <form id="form-inscription">
+        <input type="text" name="nom" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="motdepasse" placeholder="Mot de passe" required>
+        <button type="submit" class="btn-primary">S'inscrire</button>
+    </form>
+</section>
+
+    <!-- CALL TO ACTION -->
+    <section id="cta" class="cta">
+        <h2>Prêt à développer vos compétences ?</h2>
+        <p>Rejoignez SkillHub et accédez à toutes les formations proposées dans votre entreprise.</p>
+        <div class="cta-buttons">
+            <a href="#accueil" class="btn-primary">Découvrir SkillHub</a>
+            <a href="#formations" class="btn-secondary">Voir les formations</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 SkillHub</p>
+    <a href="#">Mentions légales</a>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

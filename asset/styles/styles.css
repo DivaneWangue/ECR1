@@ -1,0 +1,273 @@
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #2563eb;
+}
+
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg,#2563eb,#38bdf8);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    background: white;
+    color: #2563eb;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #f1f5f9;
+}
+
+/* FONCTIONNALITÉS & FORMATIONS */
+.features, .formations {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f9fafb;
+}
+
+.features h2, .formations h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.features-container, #formations-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+.inscription {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f3f4f6;
+}
+
+.inscription h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#form-inscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#form-inscription input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#form-inscription button {
+    padding: 12px 25px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-inscription button:hover {
+    background: #1d4ed8;
+}
+
+/* CALL TO ACTION */
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+    background: #2563eb;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: white;
+    color: #2563eb;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.btn-primary:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #2563eb;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer a{
+    color: white;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+    .features-container, #formations-container, .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #ffffff;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+}

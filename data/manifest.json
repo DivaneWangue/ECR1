@@ -1,0 +1,30 @@
+[
+  {
+    "titre": "Développement Web",
+    "categorie": "Informatique",
+    "duree": "3 mois",
+    "niveau": "Débutant",
+    "image": "images/web.png"
+  },
+  {
+    "titre": "DevOps et Cloud",
+    "categorie": "Informatique",
+    "duree": "6 mois",
+    "niveau": "Intermédiaire",
+    "image": "images/devops.png"
+  },
+  {
+    "titre": "Data Science",
+    "categorie": "Informatique",
+    "duree": "9 mois",
+    "niveau": "Avancé",
+    "image": "images/datascience.png"
+  },
+  {
+    "titre": "Intelligence Artificielle",
+    "categorie": "Informatique",
+    "duree": "12 mois",
+    "niveau": "Avancé",
+    "image": "images/ai.png"
+  }
+]
