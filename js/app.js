@@ -19,18 +19,18 @@ document.getElementById("btn-inscrire")?.addEventListener("click", function(e){
 });
 
 // Chargement des formations depuis JSON
-fetch('data/manifest.json')
+fetch ('data/formations.json')
   .then(response => response.json())
-  .then(formations => {
+  .then(data => {
     const container = document.getElementById('formations-container');
-    formations.forEach(f => {
+    data.formations.forEach(f => {
       const card = document.createElement('div');
       card.classList.add('feature-card');
       card.innerHTML = `
-        <h3>${f.titre}</h3>
-        <p>Catégorie: ${f.categorie}</p>
-        <p>Durée: ${f.duree}</p>
-        <p>Niveau: ${f.niveau}</p>
+        <h3>${f.title}</h3>
+        <p>Catégorie: ${f.category}</p>
+        <p>Durée: ${f.duration}</p>
+        <p>Niveau: ${f.level}</p>
       `;
       container.appendChild(card);
     });
